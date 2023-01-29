@@ -1,0 +1,192 @@
+1.Inicio
+2.Funcion principal()
+3.  boolean bandera <--True
+4.  opcion,i[0-n]
+5.  contador,i[0-n] <--0
+6.  letra,x(100)[{A-Z}{a-z}]
+7.
+8.  Mientras(bandera)haga
+9.    <<"Ingrese:\n 1 para Facebook \n 2 para Twitter \n 3 para Whatsapp \n 4 para Telegram \n 5 para Signal \n 6 para Instagram \n 7 para Flickr"
+10.   >>opcion
+11.   Si (opcion == 1) entonces
+12.     crearFacebook()
+13.   De lo contrario
+14.     Si (opcion == 2) entonces
+15.       crearTwitter()
+16.     De lo contrario
+17.       Si (opcion == 3) entonces
+18.         crearWhatsapp()
+19.       De lo contrario
+20.         Si (opcion == 4) entonces
+21.           crearTelegram()
+22.         De lo contrario
+23.           Si (opcion == 5) entonces
+24.             crearSignal()
+25.           De lo contrario
+26.             Si (opcion == 6) entonces
+27.               crearInstagram()
+28.             De lo contrario
+29.               Si (opcion == 7) entonces
+30.                 crearFlickr()
+31.               De lo contrario
+32.                 <<"error en opción selecciono nada"
+33.               contador <--0
+34.               Fin_si
+35.             Fin_si
+36.           Fin_si
+37.         Fin_si
+38.       Fin_si
+39.     Fin_si
+40.   Fin_si
+41.  
+42.   <<"Si desea terminar el proceso precione S"
+43.   >>letra
+44.   Si (letra == "S")] entonces
+45.
+46.    cadena,x(300)[{a-z}{A-z}{BS}]
+47.    cadena<-- obtenerMensaje(contador)
+48.    bandera<--false
+49.   Fi_si
+50.    contador<-- contador+1
+51.  Fin_Mientras
+52.Fin funcion principal
+53.Funcion crearFacebook()
+54.  	nombreUsuario,x(200)[{A-Z}{a-z}{BS}]
+55.  	edad,i[0-n]
+56.  	ciudad,x(200)[{A-Z}{a-z}{BS}]
+57.  	pais,x(50)[{a-z}]
+58.  	correoEle,x(200)[{A-Z}{a-z}{@}{0-9}]
+59.  	<<"Ingrese su nombre de usuario"
+60.  	>>nomUsuario
+61. 	<<"Ingrese su edad"
+62.  	>>edad
+63.  	<<"Ingrese su ciudad"
+64.  	>>ciudad
+65.  	<<"Ingrese su país"
+66.  	>>pais
+67.  	<<"Ingrese su correo electronico"
+68.  	>>correoEle
+69.  	<<"Usuario registrado en facebook con los siguientes datos:/n" Nombre de usuario: + nomUsuarion "/n" + "Edad:" + edad "/n" +"Ciudad:" +ciudad "/n" + "País:" + pais "/n" + "Correo Electronico:" +correoElec
+70.Fin funcion crearFacebook 
+71.Funcion crearTwitter()
+72.  	nomUsuario,x(200)[{A-Z}{a-z}{BS}]
+73.  	nombre,x(200)[{A-Z}{a-z}{BS}]
+74.  	apellido,x(200)[{A-Z}{a-z}{BS}]
+75.  	edad,i[0-n]
+76.  	ciudad,pais,x(50)[{a-z}]
+77.  	pais,x(50)[{a-z}]
+78.  	idioma,x(200)[{A-Z}{a-z}{BS}]
+79.  	corElec,x(200)[{A-Z}{a-z}{@}{0-9}]
+80.  	<<"Ingrese su nombre de usuario"
+81.  	>>nomUsuario
+82.  	<<"Ingrese su nombre"
+83.  	>>nombre
+84.  	<<"Ingrese su apellido"
+85.  	>>apellido
+86.  	<<""Ingrese su edad"
+87.  	>>edad
+88.  	<<"Ingrese su país"
+89.  	>>pais
+90.  	<<"Ingrese su idioma"
+91.  	>>idioma
+92.  	<<"Ingrese su correo electronico"
+93.  	>>corElec
+94.  	<<"Usuario registrado en Twitter con los siguientes datos: /n Nombre de usuario:" + nomUsuario + "/n" + "Nombre:" + nombre + "/n" +"Apellido:" + apellido + "/n" + "Edad:" + edad + "/n" + "Ciudad:" + ciudad +"/n" +"País:" + pais +"/n" + "Idioma:" + idioma + "/n" + "Correo Electronico:" + corElec
+95.Fin funcion crearTwitter
+96.Funcion crearWatsapp()
+97.  	nUs,x(200)[{A-Z}{a-z}{BS}]
+98.  	nTlf,i[0-n]
+99.  	e,i[0-n]
+100. 	c,x(200)[{A-Z}{a-z}{BS}]
+101. 	p,x(200)[{A-Z}{a-z}{BS}]
+102. 	<<"Ingrese su usuario"
+103. 	>>nUs
+104. 	<<"Ingrese su número de telefono"
+105. 	>>nTlf 
+106. 	<<""Ingrese su edad"
+107. 	>>e
+108. 	<<""Ingrese su ciudad"
+109. 	>>c
+110. 	<<"Ingrese su país"
+111. 	>>p
+112. 	<<"Usuario registrado en Watsapp con los siguientes datos: /n Nombre de usuario:" + nUs + "/n" + "Número de telefono:" + nTlf + "/n" +"Edad:" + edad + "/n" + "Ciudad:" + ciudad + "/n" + "País:" + p +"/n" 
+113.Fin funcion crearWatsapp
+114.Funcion crearTelegram
+115. 	nUs,x(200)[{A-Z}{a-z}{BS}]
+116. 	nTlf,i[0-n]
+117. 	c,x(200)[{A-Z}{a-z}{BS}]
+118. 	p,x(200)[{A-Z}{a-z}{BS}]
+119. 	aInt,x(200)[{A-Z}{a-z}{BS}]
+120. 	<<"Ingrese su usuario"
+121. 	>>nUs
+122. 	<<"Ingrese su número de telefono"
+123. 	>>nTlf 
+124. 	<<""Ingrese su ciudad"
+125. 	>>c
+126. 	<<"Ingrese su país"
+127. 	>>p
+128. 	<<"Ingrese su area interes"
+129. 	>>aInt
+130. 	<<"Usuario registrado en Telegram con los siguientes datos: /n Nombre de usuario:" + nUs + "/n" + "Número de telefono:" + nTlf + "/n" + "Ciudad:" + ciudad + "/n" + "País:" + p +"/n"+"Area de Interes:" + aInt + "/n"
+131.Fin funcion crearTelegram
+132.Funcion crearSignal()
+133. 	nUs,x(200)[{A-Z}{a-z}{BS}]
+134. 	nTlf,i[0-n]
+135. 	c,x(200)[{A-Z}{a-z}{BS}]
+136. 	p,x(200)[{A-Z}{a-z}{BS}]
+137. 	hP,x(50)[{a-z}]
+138. 	<<"Ingrese su usuario"
+139. 	>>nUs
+140. 	<<"Ingrese su número de telefono"
+141. 	>>nTlf 
+142. 	<<""Ingrese su ciudad"
+143. 	>>c
+144. 	<<"Ingrese su país"
+145. 	>>p
+146. 	<<"Ingrese su hobbit principal"
+147. 	>>hP
+148. 	<<"Usuario registrado en Signal con los siguientes datos: /n Nombre de usuario:" + nUs + "/n" + "Número de telefono:" + nTlf + "/n" + "Ciudad:" + ciudad + "/n" + "País:" + p +"/n"+"Hobby principal:" + hP + "/n"
+149.Fin funcion crearTelegram
+150.Funcion crearInstagram()
+151. 	nUs,x(200)[{A-Z}{a-z}{BS}]
+152. 	c,x(200)[{A-Z}{a-z}{BS}]
+153. 	e,i[0-n]
+154. 	coElec,x(200)[{A-Z}{a-z}{@}{0-9}]
+155. 	<<"Ingrese su usuario"
+156. 	>>nUs
+157. 	<<""Ingrese su ciudad"
+158. 	>>c
+159. 	<<""Ingrese su edad"
+160. 	>>e
+161. 	<<"Ingrese su correo electronico"
+162. 	>>coElec
+163. 	<<"Usuario registrado en Signal con los siguientes datos: /n Nombre de usuario:" + nUs + "/n" + "Ciudad:" + ciudad + "/n" + "Edad:" + e +"/n"+"Correo electromico:" + coElec + "/n"
+164.Fin funcion crearInstagram
+165.Funcion crearFlickr()
+166. 	nUs,x(200)[{A-Z}{a-z}{BS}]
+167. 	coElec,x(200)[{A-Z}{a-z}{@}{0-9}]
+168. 	<<"Ingrese su usuario"
+169. 	<<nUs
+170. 	<<"Ingrese su correo electronico"
+171. 	>>coElec
+172. 	<<"Usuario registrado en Signal con los siguientes datos: /n Nombre de usuario:" + nUs + "/n" + "Correo electromico:" + coElec + "/n"
+173.Fin funcion crearFlickr
+174.Funcion obtener mensaje(numero,i):x
+175. 	numero,i[0-n]
+176. 	(mensajefinal(3),x(300)[{a-z}{A-Z}{BS}])
+177. 	mensajef, x(300)[{a-z}{A-Z}{BS}])
+178. 	mensajefinal <--{"Campaña con poca afluenacia" " Campaña moderna siga adelante""Exelente campaña"}
+179. 	Para (mensajefinal <-- 0,mensajefinal<3, 1) haga
+180.   		Si (numero <= 5 entonces 
+181.     		mensajef<--"Numero total de cuentas creadas:"+ numero" +"/n" + mensajefinal[0]
+182.   		De lo contrario
+183.     		Si (numero <= 15) entonces 
+184.       			mensajef <--"Numero total de cuentas creadas:"+ numero" +"/n" + mensajefinal[1]
+185.     		De lo contrario
+186.       			mensajef <--"Numero total de cuentas creadas:"+ numero" +"/n" + mensajefinal[2]
+187.     		Fin si
+188.   		Fin si  
+189. Fin_Mientras  
+190. retornar mensajef
+191.Fin funcion obtenerMensaje
+
